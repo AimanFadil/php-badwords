@@ -5,6 +5,19 @@
 
 }
 
+.bordi {
+    border: solid 2px #0d6efd;
+    margin: 15px;
+
+}
+
+.blue {
+    color: #0d6efd;
+}
+
+.red {
+    color: red;
+}
 
 
 .titolo {
