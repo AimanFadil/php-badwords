@@ -2,7 +2,8 @@
     $paragrafo = $_GET['paragrafo'];
     $censura = $_GET['censura'];
 
-    $new_paragrafo = str_replace($censura,'<span class="red">***</span>', $paragrafo);
+    $new_paragrafo = str_replace($censura, '<span class="red">***</span>' , $paragrafo);
+    $new_censurato = str_replace($censura, '***' , $paragrafo);
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +30,10 @@
             <div class="col-12 bordi py-4">
                 <span class="blue">IL PARAGRAFO CENSURATO:</span>   
                 <span>"<?php echo $new_paragrafo ?>"</span>
+            </div>
+            <div class="col-12 bordi py-4">
+                <span class="blue">IL PARAGRAFO CENSURATO E' LUNGO:</span>   
+                <span>"<?php echo strlen($new_censurato) ?>"</span>
             </div>
         </div>
     </div>
